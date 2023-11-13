@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/66f9dfefb9.js" crossorigin="anonymous"></script>
+    
+</head> 
+<body>
+    <header>
+        <nav>
+            <div class="left">RITIK MEHTA</div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#About"> About</a></li>
+                    <li><a href="#Blog"> Blog</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#Contact"> Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftsection">Hi, My name is  <span class="purple">Ritik</span>
+                <div>and I am a passionate</div>  
+                    <span id="element"></span>    
+            </div>
+            <div class="rightsection"><img src="bg1.png" alt="Image Not Found"></div>
+        </section>
+        
+        <section class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="bg.jpg">
+                    </div>
+
+                    <div class="about-col-2">
+                        <h1 class="sub" id="About">About Me </h1>
+                        <p>I am Ritik Mehta student of Bachelor of Computer Application. I am looking a secured desirable position in a organization.I can adapt in both self-starting and collaborative environments. I want to contribute towards to organization with my skills and became valuable assest for organization.</p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Web Development</span><br>HTML | CSS | JavaScript</li>
+                                <li><span>Content Creating</span><br>Video Editing | Writing</li>
+                                <li><span>Programming Languages</span><br> C | C++ | Python | SQL</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>CodSoft Internship</span><br />Web Developer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Bachelor Of Computer Aplication</span><br>Pal College Of Technology And Management,Haldwani</li>
+                                <li><span>Intermediate</span><br>Kendriya Vidyalaya Kausani,Bageshwar<br>Percentage:70%</li>
+                                <li><span>High School</span><br>Kendriya Vidyalaya Bageshwar <br> Percentage:80%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="third" id="Blog">
+            <div id="container">
+                <h1 class="sub-blog">Blogs</h1>
+                <div class="blog-list">
+                    <div>
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h2>Azure and AWS </h2>
+                        <p> A look into some of the technical management and hardware decisions we make. </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Love and Hate with Codes</h2>
+                        <p>Coding like poetry should be short and concise.
+                            It's not a bug; it's an undocumented feature. </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-firefox-browser"></i>
+                        <h2>Firefox Browser</h2>
+                        <p>A unexplored ocean of information. Its good to dive in it. </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="Fourth" id="work">
+            <div id="task">
+                <h1 class="sub-task"> My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Work3.jpg">
+                        <div class="layer">
+                            <h3>Amazon Clone</h3>
+                            <p>Amazon strives to be the e-commerce destination where consumers can find and discover anything they want to buy online.</p>
+                            <a href="https://github.com/rajmehta2912/Amazon-clone/tree/main" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Work1.jpg">
+                        <div class="layer">
+                            <h3>Landing Page</h3>
+                            <p>A website that gives large varities to food lovers. Come and have an wonderful experience and give a chance us to impress you.  </p>
+                            <a href="https://thelocalcraftfood.netlify.app/" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Work2.jpg">
+                        <div class="layer">
+                            <h3>Calculator</h3>
+                            <p>An integral part of the problem solving process and help students determine the keystrokes needed to complete a task.</p>
+                            <a href="https://onlinefreecalculator.netlify.app/" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.sportskeeda.com/" target="_blank" class="btn">Sports News</a>
+            </div>
+        </section>
+
+        <section class="Fifth" id="Contact">
+            <div class="detail">
+                <div class="row1">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <i class="fa-solid fa-paper-plane"></i> rmehta5559@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 0123456568</p>
+                        <div class="social">
+                            <a href="https://www.facebook.com/profile.php?id=100027090450076"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/raj_m3hta/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ritikmehta2002/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/rajmehta2912"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2 ">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>  &copy; 2023 All rights reserved to Raj Mehta</p>
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Writer' , 'Video Editor'],
+      typeSpeed: 50,
+    });
+  </script>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-links");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-links");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+  
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu()
+    {
+        sidemenu.style.right = "0";
+    }
+    function closemenu()
+    {
+        sidemenu.style.right = "-200px";
+    }
+
+  </script>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbykeC1HIqEJa73dDTAtRaZZoLgvSXzN_SEvCe7WzthfkKzMKIMKaGZH3XMuX6rEE0ca/exec";
+    const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 2000);
+            form.reset()
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+  </script>
+ 
+</body> 
+</html>
